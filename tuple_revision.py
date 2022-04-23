@@ -7,3 +7,8 @@ print(num)
 # search the index for matching item
 match = t.index("this")
 print(match)
+
+items = [(1, 'a'), (2, 'b'), (3, 'c')]
+
+for number, char in items:
+    print(f"{number} {char}")

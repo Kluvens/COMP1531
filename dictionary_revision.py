@@ -6,6 +6,12 @@ dic = {
 }
 print(dic)
 
+# looping in dictionary
+for key in dic.keys():
+    print(key)
+for value in dic.values():
+    print(value)
+
 # copy a dictionary
 dic2 = dic.copy()
 print(dic2)

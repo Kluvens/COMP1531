@@ -48,3 +48,13 @@ print(l)
 
 # slicing
 print(l2[1:5])
+
+items = ['a', 'b', 'c', 'd']
+for i in range(len(items)):
+    print(items[i])
+
+for item in items:
+    print(item)
+
+for idx, item in enumerate(items):
+    print(f"{idx}: {item}")
