@@ -75,3 +75,8 @@ def test_channel_details_working_single_member(setup):
     first_channel_details = response.json()
 
     assert first_channel_details['name'] == "this_channel"
+
+map, reduce and filter are functions that help as accomplish basic iterative tasks without the overhead of a loop setup
+Map: creates a new list with the results of calling a provided function on every element in the given list
+Reduce: executes a reducer function (that you provide) on each member of the array resulting in a single output value
+Filter: creates a new array with all elements that pass the test implemented by the provided function
