@@ -76,3 +76,18 @@ JWTs are lightweight ways of encoding and decoding private information via a sec
 Persistence: When program state outlives the process that created it. This is achieved by storing the state as data in computer data storage.
 We use pickle to achieve data persistence
 
+SDLC: Requirements analysis -> design -> development -> testing -> deployment -> maintainance ->
+requirements: A condition or capability needed by a user to solve a problem or achieve an objective
+Functional requirements specify a specific capability/service that the system should provide. It's what the system does.
+Non-functional requirements place a constraint on how the system can achieve that. Typically this is a performance characteristic.
+examples:
+    Functional: The system must send a notification to all users whenever there is a new post, or someone comments on an existing post
+    Non-functional: The system must send emails no later than 30 minutes after from such an activity
+requirements engineering is:
+    A set of activities focused on identifying the purpose and goal of a software system
+    A negotiation process where stakeholders agree on what they want. Stakeholders include: end users, clients, design teams
+requiremetns engineering follows a logical process across 4 steps:
+    Elicitation of raw requirements from stakeholders (question and discovery)
+    Analysis of requirements (building the picture)
+    Formal specification of requirements (refining the picture)
+    Validation of requirements (check you haven't gotten lost)
