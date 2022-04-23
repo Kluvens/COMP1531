@@ -91,3 +91,43 @@ requiremetns engineering follows a logical process across 4 steps:
     Analysis of requirements (building the picture)
     Formal specification of requirements (refining the picture)
     Validation of requirements (check you haven't gotten lost)
+
+User Stories are a method of requirements engineering used to inform the development process and what features to build with the user at the centre.
+A student can purchase monthly parking passes online -> As a student, I want to purchase a parking pass so that I can drive to school
+User stories: Are written in non-technical language and Are user-goal focused, not product-feature focused
+INVEST
+    I = Independent: user story could be developed independently and delivered separately
+    N = Negotiable: avoid too much detail.
+    V = Valuable: must hold some value to the client
+    E = Estimable: we'll get to this in a later lecture
+    S = Small: user story should be small
+    T = Testable
+User Acceptance Criteria: 
+    Break down a user story into criteria that must be met for the user, or customer, to accept
+    Written in natural language
+    Can be refined before implementation
+example:
+    As a user, I want to use a search field to type a city, name, or street, so that I can find matching hotel options.
+        The search field is placed on the top bar
+        Search starts once the user clicks “Search”
+        The field contains a placeholder with a grey-colored text: “Where are you going?”
+        The placeholder disappears once the user starts typing
+        Search is performed if a user types in a city, hotel name, street, or all combined
+        The user can’t type more than 200 symbols
+         
+Acceptance Tests are tests that are performed to ensure acceptance criteria have been met
+Not all acceptance criteria can easily be mapped to automated acceptance tests
+Acceptance tests are black-box tests
+The Acceptance criteria from before are often referred to a rule-based AC
+Sometimes it is preferable to have AC that describe a scenario
+This can be done in the Given/When/Then format
+                                
+Rule-based acceptance criteria are simpler and generally work for all sorts of stories
+Scenario-based AC work for stories that imply specific user actions, but don't work for higher-level system properties (e.g. design)
+Scenario-based AC are more likely to be implementable as tests
+                                
+use cases:
+Represent a dialogue between the user and the system, with the aim of helping the user achieve a business goal
+The user initiates actions and the system responds with reactions
+They consider systems as a black box, and are only focused on high level understanding of flow
+                 
