@@ -1,3 +1,4 @@
+from functools import reduce
 # list
 l = [1, 2, 3, "this", 5.6, False, True]
 
@@ -58,3 +59,18 @@ for item in items:
 
 for idx, item in enumerate(items):
     print(f"{idx}: {item}")
+
+# Map: creates a new array with the results of calling a provided function on every element in the calling array
+def shout(string):
+    return string.upper() + '!'
+better_items = list(map(shout, items))
+print(better_items)
+
+# Filter: creates a new array with all elements that pass the test implemented by the provided function
+filtered_items = list(filter(lambda m: m != 'b', items))
+print(filtered_items)
+
+# Reduce: executes a reducer function (that you provide) on each member of the array resulting in a single output value
+studentMarks = [55, 43, 34, 23, 22, 10, 26]
+total = reduce(lambda a, b: a+b, studentMarks)
+print(total)
