@@ -50,3 +50,19 @@ API testing:
     one way of testing a web server
     it's a black-box testing
     widely used in industry
+
+Design approaches that do not make things better are called design smells
+Generally speaking, well designed code is simple, clear, and resists the tendency to break as the software changes or grows.
+"Don't repeat yourself" (DRY) is about reducing repetition in code. The same code/configuration should ideally not be written in multiple places.
+"Keep it Simple, Stupid" (KISS) principles state that a software system works best when things are kept simple. It is the believe that complexity and errors are correlated.
+Coupling is the degree of interdependence between software components. Excessive coupling can lead to spaghetti code.
+Top-down thinking says that when building capabilities, we should work from high levels of abstraction down to lower levels of abstraction.
+Refactoring is restructuring existing code withour changing its external behaviour. Typically this is to fix code or design smells and thus make code more maintainable.
+We also should find a balance:
+    don't over-optimise to remove design smells
+    don't apply priciples when there are no design smells
+Clean code is generally defined by:
+    being as simple as possible
+    following standard & understood conventions
+Within python, being "Pythonic" means that your code generally follows a set of idioms agreed upon by the broader python community.
+Docstrings are an important way to document code and make clear to other programmers the intent and meaning behind what you're writing. We are somewhat different on the formatting, but we want it to include 1) Description, 2) Parameters, 3) Returns
