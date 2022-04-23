@@ -66,3 +66,13 @@ Clean code is generally defined by:
     following standard & understood conventions
 Within python, being "Pythonic" means that your code generally follows a set of idioms agreed upon by the broader python community.
 Docstrings are an important way to document code and make clear to other programmers the intent and meaning behind what you're writing. We are somewhat different on the formatting, but we want it to include 1) Description, 2) Parameters, 3) Returns
+
+Authentication: Process of verifying the identity of a user
+Authorisation: Process of verifying an identity's access privileges
+In other words, user registers, we store their password. When user logs in, we compare their input password to their stored password.
+Authorisation typically involves giving the user some kind of pseudo-password that they store on their computer (client-side) which is a shortcut method for authorising a particular user.
+A token means a packet of data used to autorise the user
+JWTs are lightweight ways of encoding and decoding private information via a secret
+Persistence: When program state outlives the process that created it. This is achieved by storing the state as data in computer data storage.
+We use pickle to achieve data persistence
+
