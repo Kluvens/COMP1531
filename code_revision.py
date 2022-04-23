@@ -3,6 +3,7 @@
 # tuples are fore immutable ordered structures of any mix of types
 # An exception is an action that disrupts the normal flow of a program. This action is often representative of an error being thrown. Exceptions are ways that we can elegantly recover from errors
 
+# In python, basically every data type acts like an "object"
 try:
   print(x)
 except:
