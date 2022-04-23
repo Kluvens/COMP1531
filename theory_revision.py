@@ -45,3 +45,8 @@ API is a specification of how a software system accessed programmatically
 RESTful APIs
 Method: POST - GET - PUT - DELETE
 Operation: Create - Read - Update - Delete
+
+API testing:
+    one way of testing a web server
+    it's a black-box testing
+    widely used in industry
