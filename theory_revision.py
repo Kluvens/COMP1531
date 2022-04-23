@@ -36,3 +36,12 @@ Coverage:
   code coverage: a measure of how much code is executed during testing
   Measure code coverage as a percentage of statements (lines) executed
   Commands are coverage run --source=. -m pytest and coverage report
+
+Relation: Network > Internect > World Wide Web
+WWW is a combination of three technologies: HTML, URL, and HTTP. It is all served over the internet
+Network Protocol is a standardised structure for communicating data
+Flask is a python library for creating and handling HTTP requests
+API is a specification of how a software system accessed programmatically
+RESTful APIs
+Method: POST - GET - PUT - DELETE
+Operation: Create - Read - Update - Delete
