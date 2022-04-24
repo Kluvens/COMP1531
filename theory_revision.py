@@ -134,3 +134,20 @@ They consider systems as a black box, and are only focused on high level underst
 generally you can represent use cases as:
     informal list of steps
     diagramatic
+
+A model is an attempt to represent a more complex system
+A conceptual model captures a system in a conceptual way: high level abstraction and tends to be diagramatic or visual
+conceptual models software engineers care about: data models, mathematical models, domain models, data flow models, state transition models
+conceptual models:
+    structural - emphasise the static structure of the system: UML class diagrams and ER diagrams
+    behavioural - emphasise the Dynamic behaviour: state diagrams, use case diagram
+
+state diagrams:
+    state machines made up of a finite number of states
+    the machine can be transitioned from one state to another through an action
+    simple example: door (from open to close)
+state machines:
+    useful for modelling systems that have clearly defined states. For example:
+        UIs with different screens
+        Network protocols
+        conversational interfaces
