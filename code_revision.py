@@ -9,14 +9,14 @@ try:
 except:
   # if try block cannot run, run except block
   print("An exception occurred")
-  
+
 try:
   print(x)
 except NameError:
   print("Variable x is not defined")
 except:
   print("Something else went wrong")
-  
+
 try:
   print(x)
 except:
@@ -24,7 +24,7 @@ except:
 finally:
   # no matter which block is run before, we run finally block in the end
   print("The 'try except' is finished")
-  
+
 # pytest for checking exception
 def test_zero_division():
   with pytest.raises(ZeroDivisionError):
@@ -50,7 +50,7 @@ API testing:
 # setup is a fixture and fixture is a decorator
 def test_channel_create_token_error(setup):
     response = requests.post(
-        f"{url}/channels/create/v2", 
+        f"{url}/channels/create/v2",
         json={
             "token": "Invalid token",
             "name": "this_channel",
@@ -67,10 +67,10 @@ def test_channel_details_working_single_member(setup):
 
 
     response = requests.get(
-        f'{url}/channel/details/v2', 
+        f'{url}/channel/details/v2',
         params={'token': token,
         'channel_id': int(channel_id)})
-    
+
     assert response.status_code == OKAY
     first_channel_details = response.json()
 
@@ -80,3 +80,7 @@ map, reduce and filter are functions that help as accomplish basic iterative tas
 Map: creates a new list with the results of calling a provided function on every element in the given list
 Reduce: executes a reducer function (that you provide) on each member of the array resulting in a single output value
 Filter: creates a new array with all elements that pass the test implemented by the provided function
+
+Decorators allow us to add functionality to a function without altering the function itself, by "decorating" (wrapping) around it.
+Arguments in python can either be keyword arguments (named) or non-keyword arguments. Non-keyword arguments cannot appear after keyword arguments in the argument list
+*args: non-keyword arguments as a list and *kwargs: keyword arguments as a dictionary
