@@ -151,3 +151,18 @@ state machines:
         UIs with different screens
         Network protocols
         conversational interfaces
+
+To achieve rapid deployment cycles, modern deployment isn't as simple as pushing code. Rather, a heavily integrated and automated approach is preferred.
+Continuous integration: Practice of automating the integration of code changes from multiple contributors into a single software project.
+Continuous delivery: Allows accepted code changes to be deployed to customers quickly and sustainably. This involves the automation of the release process such that releases can be done in a "button push".
+
+deployment has 3 core tiers:
+    dev: released often, available to developers to see their changes in deployment
+    test/staging: as close to release as possible, ideally identical to prod
+    prod: release to customers, ideally as quickly as possible
+
+Continuous Deployment is an extension of Continuous Delivery whereby changes attempt to flight toward production automatically, and the only thing stopping them is a failed test
+Maintenance: After deployment, the use of analytics and monitoring tools to ensure that as the platform is used and remains in a healthy state.
+Monitoring often has two purposes:
+    Preserving user experience: Monitoring errors, warnings, and other issues that affect performance or uptime.
+    Enhancing user experience: Using analytical tools to monitor users or understanding their interactions. Often leads to customer interviews and user stories
