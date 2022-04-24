@@ -33,3 +33,12 @@ git status
 git branch
 git branch -d branch_name (to delete a branch)
 git merge master (The merge command let's you specify the branch you want merged into your current branch. Merge from master to your branch)
+
+git reset --hard [hash]:
+    Sets all of your code to a specific commit. This is used for saying "I want to go back in time, and I don't care about anything that's happened since that point I'm going back to"
+git reset --soft [hash]:
+    Keeps all of your current code the same, but just changes what commit you're pointing to. This is used for saying "I like the code I have, so let's not change anything, but I want to alter the history of commits that got me here"
+
+Sometimes we need to update our previous commit name. We can do that easily by making another commit that over-rides it.
+git commit --amend -m "Commit"
+The --amend flag will make the commit, but it will replace the most recent commit with the new commit instead of adding another commit to the history
