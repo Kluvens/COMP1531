@@ -166,3 +166,37 @@ Maintenance: After deployment, the use of analytics and monitoring tools to ensu
 Monitoring often has two purposes:
     Preserving user experience: Monitoring errors, warnings, and other issues that affect performance or uptime.
     Enhancing user experience: Using analytical tools to monitor users or understanding their interactions. Often leads to customer interviews and user stories
+
+No Silver Bullet – Essence and Accident in Software Engineering by Fred Brooks
+Described software complexity by dividing it into two categories essential and accidental.
+Further conclusions of the paper are much debated
+
+Essential: Complexity that is inherent to the problem. For example, if the user or client requires the program to do 30 different things, then those 30 things are essential
+Accidental: Complexity that is not inherent to the problem. For example, generating or parsing data in specific formats.
+Essential Fundamentally can't be removed, but can be managed with good software design.
+Accidental Can be somewhat mitigated by engineering decisions; e.g. smart use of libraries, standards, etc. Hard to remove entirely.
+
+Coupling: A measure of how closely connected different software components are
+Usually expressed as a simple ordinal measure of "loose" or "tight"
+For example, web applications tend to have a frontend that is loosely coupled from the backend
+Loose coupling is good
+
+Cohesion:
+The degree to which elements of a module belong together
+Elements belong together if they're somehow related
+Usually expressed as a simple ordinal measure of "low" or "high"
+High cohesion is good
+
+Cyclomatic complexity:
+A measure of the branching complexity of functions
+Computed by counting the number of linearly-independent paths through a function
+To compute cyclomatic complexity:
+1. convert function into a control flow graph
+2. calculate the value of the formula: V(G) = e - n + 2
+
+Safety: Protection from accidental misuse
+Security: Protection from deliberate misuse
+Software becomes unsafe when its design or implementation allow for unexpected or unintended behaviours, particularly during runtime.
+
+Static: Static properties can be inferred without executing the code. E.g. pylint statically checks that variables are initialised before they're used
+Dynamic: Dynamic properties are checked during execution. E.g. python dynamically checks that an index is inside the bounds of a list and throws an exception if it isn't (unlike an array in C)
