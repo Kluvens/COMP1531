@@ -200,3 +200,39 @@ Software becomes unsafe when its design or implementation allow for unexpected o
 
 Static: Static properties can be inferred without executing the code. E.g. pylint statically checks that variables are initialised before they're used
 Dynamic: Dynamic properties are checked during execution. E.g. python dynamically checks that an index is inside the bounds of a list and throws an exception if it isn't (unlike an array in C)
+
+Memory safety:
+Protecting from bugs relating to memory access
+Python is memory safe as it prevents access memory that hasn't been initialised or allocated
+The checks are mostly dynamic (at runtime)
+In python, safety is prioritised over the negligible performance cost of bounds-checking
+C is not memory safe
+No bounds checking is performed for array accesses
+Pointers can still be dereferenced even if they don't point to allocated memory
+C prioritises performance over safety (and security)
+
+Easier to Ask for Forgiveness than Permission is the python convention for handling errors.
+It encourages you to assume something will work and just have an exception handler to deal with anything that might go wrong
+Pros:
+Can simplify the core logic
+Multiple different sorts of errors can be handled with one except block
+Cons:
+Makes code non-structured
+Harder to reason what code will be executed.
+
+Look Before You Leap is a convention for avoiding errors popular in languages like C
+Unlike EAFP it encourages you to check that something can be done before you do it
+Pros:
+Doesn't require exceptions
+Code is structured and therefore easier to reason about
+Cons:
+Core logic can be obscured by error checks
+
+Type safety
+Preventing mismatches between the actual and expected type of variables, constants and functions
+C is type-safe*, as types must be declared and the compiler will check that the types are correct
+Python, on its own, is not type-safe. Everything has a type, but that type is not known till the program is executed
+Type checking is associated with mypy
+example:
+def headline(text: str, align: bool = True) -> str:
+def headline(ConnectionOptions: dict[str, str]) -> List[str]
