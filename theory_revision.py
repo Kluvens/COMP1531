@@ -236,3 +236,11 @@ Type checking is associated with mypy
 example:
 def headline(text: str, align: bool = True) -> str:
 def headline(ConnectionOptions: dict[str, str]) -> List[str]
+
+JSON and YAML are very popular now and it is very esay to covert them
+
+YAML looks like:
+locations:
+- suburb: Kensington
+  postcode: 2033
+                                
