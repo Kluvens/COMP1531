@@ -18,19 +18,22 @@ A branch essentially is just a pointer to a particular commit.
 You can create your own branch if you want to continue on a separate thread of working, unrelated to the master branch.
 In most industries, you cannot merge your branch into master via the command line. Instead, we allow our git site (e.g. gitlab) to do this via a Merge Request
 
-git add .
-git commit -m "more updates on this function"
-git push
+git --version (to show the version of git installed)
+git log (a utility tool to review and read a history of everything that happens to a repository.)
+git add . (stage all the files)
+git commit -m "more updates on this function" (make a commit)
+git push (push the code to the repository)
 git fetch (This Git command will get all the updates from the remote repository, including new branches.)
 git fetch origin master
 git pull
 git pull origin master
 git clone gitlab@gitlab.cse.unsw.EDU.AU:COMP1531/22T1/groups/F13B_BADGER/project-backend.git
-git checkout -b new_branch_name
+git checkout -b new_branch_name (create a new branch and switch to it)
 git checkout (You can use the checkout command to switch the branch that you are currently working on.)
 git diff (You can use this command to see the unstaged changes on the current branch. Here’s an example of a branch with an edited feature file)
 git status
-git branch
+git branch (check all branches)
+git branch branch_name (to create a branch)
 git branch -d branch_name (to delete a branch)
 git merge master (The merge command let's you specify the branch you want merged into your current branch. Merge from master to your branch)
 
@@ -42,3 +45,5 @@ git reset --soft [hash]:
 Sometimes we need to update our previous commit name. We can do that easily by making another commit that over-rides it.
 git commit --amend -m "Commit"
 The --amend flag will make the commit, but it will replace the most recent commit with the new commit instead of adding another commit to the history
+
+Gitlab is an open source software development platform with source code management system, CI/CD and complete DevOps platform
