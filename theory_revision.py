@@ -243,4 +243,24 @@ YAML looks like:
 locations:
 - suburb: Kensington
   postcode: 2033
-                                
+
+Design principles:
+    - resuable/modular
+    - maintainable
+    - robust to changes
+generally speaking, well designed code is simple, clear and resistts the tendency to break as the software changes or grows.
+
+Design:
+before coding: design means thoughtfulness in planning
+during coding: design means robustness in coding
+
+thoughtful plannings include:
+    - writing pseudocode
+    - flow diagrams
+    - componenet diagrams
+    - state diagrams
+
+Use case:
+    - title: a short phrase with an active verb(e.g. add new member or send email)
+    - actor: identifies who is having this interaction(e.g. user or customer)
+    - scenario: a short story
