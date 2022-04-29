@@ -34,5 +34,8 @@ print(right_max)
 # replace method(what we have, what we want, maximum time to be replaced)
 print(string.replace("hello", "youh", 1))
 
+# reverse a string
+str[::-1]
+
 f = 3.1415926
 print("{:.3f}".format(f))
