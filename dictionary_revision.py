@@ -50,3 +50,10 @@ print(dic)
 # clear the dictionary
 dic.clear()
 print(dic)
+
+# if not exist set to 0 if exists plus one
+result = {}
+for c in input:
+    result[c] = result.get(c,0) + 1
+return result
+
