@@ -41,5 +41,8 @@ print(string.replace("hello", "youh", 1))
 # reverse a string
 str[::-1]
 
+# Remove any white spaces at the end of the string
+x = txt.rstrip()
+
 f = 3.1415926
 print("{:.3f}".format(f))
