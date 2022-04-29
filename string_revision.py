@@ -10,6 +10,10 @@ print(string.find("lllo"))
 print(string.rfind("llo"))
 print(string.rfind("lllo"))
 
+# concatenate strings
+str += 'hi'
+str = 'harry' + 'potter'
+
 # id() function returns the identity of the object.
 print(id(string))
 
