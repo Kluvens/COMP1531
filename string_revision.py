@@ -46,3 +46,7 @@ x = txt.rstrip()
 
 f = 3.1415926
 print("{:.3f}".format(f))
+
+# check if a string starts with another string
+txt = "Hello, welcome to my world."
+x = txt.startswith("Hello")
