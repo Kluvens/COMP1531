@@ -57,3 +57,7 @@ for c in input:
     result[c] = result.get(c,0) + 1
 return result
 
+# Convert two lists into a dictionary
+keys = ['Ten', 'Twenty', 'Thirty']
+values = [10, 20, 30]
+res_dict = dict(zip(keys, values))
